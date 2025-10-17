@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffead8;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #d1a980;
+  padding-block: 20px;
+  text-align: center;
+}
+
+header img {
+  margin-bottom: 10px;
+  width: 90px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: aliceblue;
+}
+
+header p {
+  font-size: 16px;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #fff2e0;
+  padding-block: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 85px;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  padding-inline: 15px;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: #7e4a01;
+  background-color: #d1a980;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding-inline: 15px;
+  padding-block: 10px;
+}
+
+/* Main Content */
+main {
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome-section h3 {
+  margin-block: 22px;
+  font-size: 22px;
+}
+
+.welcome-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.welcome-section img {
+  width: 500px;
+  height: 320px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.welcome-section h4 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.welcome-section ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.welcome-section li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #d1a980;
+  color: #7e4a01;
+}
+
+.contact-info a {
+  color: #7e4a01;
+  text-decoration: none;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info a:hover {
+  color: #7e4a01;
+  text-decoration: underline;
+}
+
+.menu-section h3 {
+  margin-block: 30px 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  margin-bottom: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffe1b7;
+}
+
+th {
+  background-color: #d1a980;
+  color: #000000;
+  font-weight: 600;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 15px auto;
+  background-color: #fff2e0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.contact-details {
+  text-align: center;
+}
+
+.contact-details p a {
+  text-decoration: none;
+  color: #7e4a01;
+}
+
+.contact-details p a:hover {
+  text-decoration: underline;
+}
+
+.contact-about {
+  margin-top: 50px;
+}
+
+/* Buttons */
+button {
+  background-color: #d1a980;
+  color: aliceblue;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #d1a980;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.about-us-section img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Navbar - override Bootstrap .nav-link styles so hover matches our theme */
+.navbar .navbar-nav .nav-link {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 15px;
+  /*vertical|horizontal*/transition: color 0.3s ease, background-color 0.3s ease;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -moz-transition: color 0.3s ease, background-color 0.3s ease;
+  -ms-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: #7e4a01;
+  background-color: #d1a980;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Keep active link styled similarly */
+.navbar .navbar-nav .nav-link.active {
+  color: #7e4a01;
+  background-color: #d1a980;
+  border-radius: 5px;
+}
+
+.navbar-nav {
+  gap: 85px;
+}
+
+/* Carousel */
+/* Use .carousel-img on images in HTML for consistent, responsive sizing */
+.carousel-img {
+  display: block;
+  width: 100%;
+  max-width: 900px; /* prevent overly wide images on very large screens */
+  max-height: 380px; /* medium height */
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover; /* crop to fill while maintaining aspect ratio */
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Make carousel prev/next icons black (override Bootstrap default white icons) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* Use an inline SVG background to force icon color to black */
+  background-color: transparent;
+  background-size: 100%, 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 1L4 8l7 7'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 1l7 7-7 7'/%3E%3C/svg%3E");
+}
+
+/* Optionally darken on hover/focus for feedback */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon,
+.carousel-control-prev:focus .carousel-control-prev-icon,
+.carousel-control-next:focus .carousel-control-next-icon {
+  filter: brightness(0.8);
+}
+
+/* General responsive tweaks */
+@media (min-width: 992px) {
+  .carousel-img {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-img {
+    max-height: 260px;
+  }
+  .carousel-caption {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .navbar-nav {
+    gap: 30px;
+  }
+
+  /* Reduce welcome image size */
+  .welcome-section img,
+  .about-us-section img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+
+  /* Carousel captions readable on medium screens */
+  .carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Stack columns vertically on small screens */
+  .row.align-items-start {
+    display: block;
+  }
+
+  .row.align-items-start .col {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  main {
+    padding: 10px 12px;
+  }
+
+  /* Make nav links more compact on mobile */
+  .navbar .navbar-nav .nav-link {
+    padding: 6px 8px;
+    font-size: 16px;
+  }
+
+  /* Forms and inputs full width on mobile */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    width: 70px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .navbar-nav {
+    gap: 18px;
+  }
+
+  /* Smaller carousel height on very small screens */
+  .carousel-img {
+    max-height: 220px;
+  }
+
+  .carousel-caption {
+    font-size: 13px;
+    padding: 6px;
+  }
+}

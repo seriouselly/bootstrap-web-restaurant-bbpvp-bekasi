@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="./images/logo-1-preview.png" alt="logo ayce"/>
+      <h1>Selamat Datang di All You Can Eat!</h1>
+      <p>Semua orang bisa makan sepuasnya di sini!</p>
+      <!-- Navigasi -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about-us.html">Tentang Kami</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h2>Pesan disini!</h2>
+      <form action="menu.html" method="post">
+        <label for="name">Nama:</label>
+        <br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Masukkan namamu disini"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="email">Email:</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Masukkan emailmu disini"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="message">Pesan:</label>
+        <br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          maxlength="5000"
+          placeholder="Tulis pesananmu disini.."
+          required
+        ></textarea>
+        <br />
+        <button type="submit">Kirim</button>
+      </form>
+      <br />
+      <br />
+
+      <div class="contact-details">
+        <h3>Kontak Kami</h3>
+        <p>
+          Jika Anda memiliki pertanyaan atau ingin melakukan reservasi, silakan
+          hubungi kami melalui:
+        </p>
+        <p>Email: <a href="#">info@allyoucaneat.com</a></p>
+      </div>
+      <div class="contact-info">
+        <a href="#">Whatsapp</a> |
+        <a href="#">Instagram</a>
+      </div>
+    </main>
+
+    <footer>&copy; 2025 All You Can Eat. All rights reserved.</footer>
+  </body>
+</html>
